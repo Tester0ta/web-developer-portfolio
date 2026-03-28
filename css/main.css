@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #121212;
+    color: white;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 100%;
+}
+header {
+    width: 100%;
+    background-color: #181A19;
+    border-bottom: 1px solid #222;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li.active a {
+    color: #00E5FF;
+    font-weight: 700;
+}
+.btn {
+    color: #00E5FF;
+    border: 2px solid #00E5FF;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: 600;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: #00E5FF;
+    color: #121212;
+}
+.hero {
+    padding: 80px 0;
+    min-height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero--info {
+    width: 65%;
+    max-width: 850px;
+    background: rgba(24, 26, 25, 0.85);
+    padding: 50px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(0px);
+}
+.hero--info h1 {
+    color: #00E5FF;
+    font-size: 40px;
+}
+.hero--info h2 {
+    font-size: 30px;
+}
+.hero--info h3 {
+    font-size: 30px;
+}
+.img-left, .img-right {
+    position: absolute !important;
+    border-radius: 30px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+}
+.img-left {
+    top: 370px;
+    right: 40%;
+    z-index: 2;
+}
+.img-right {
+    top: 300px;
+    right: 0;
+    z-index: 5;
+}
+.hero-btn {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 260px 250px;
+    font-weight: 700;
+    gap: 20px;
+}
+.hero-btn .btn1 {
+    color: black;
+    z-index: 7;
+    padding: 17px 29px;
+    border-radius: 35px;
+    background: #00E5FF;
+    border: 3px solid #00E5FF;
+}
+.hero-btn .btn2 {
+    color: #00E5FF;
+    z-index: 7;
+    padding: 17px 90px;
+    border-radius: 35px;
+    border: 3px solid #00E5FF;
+}
+.hero-btn .btn1:hover, .hero-btn .btn2:hover {
+    transform: scale(1.1);
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 80px 0; 
+}
+.about-me h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: #00E5FF;
+    margin-top: 0;
+}
+.about-me p {
+    font-weight: 300;
+    font-size: 33px;
+}
+.timeline {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    padding-left: 30px 0;
+    margin: 40px 0;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -47px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: #121212;
+    border: 2px solid #00E5FF;
+    border-radius: 50%;
+    z-index: 2;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: #121212;
+    border: 2px solid #00E5FF;
+    border-radius: 50%;
+    z-index: 2;
+}
+.timeline-item h3 {
+    margin: 0 0 5px 0;
+    color: #00E5FF;
+    font-size: 28px;
+}
+.timeline-item p {
+    margin: 0;
+    font-size: 20px;
+    color: #ccc;
+}
+.about-right {
+    width: 35%;
+}
+.about-left {
+    width: 60%;
+}
+.projects {
+    background: #121212;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    padding: 10px 10px;
+    border: 2px solid #00E5FF;
+}
+.projects img {
+    width: 500px;
+    border-radius: 15px;
+    padding: 7px 7px;
+}
+.card-content {
+    padding: 7px 7px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #00E5FF;
+}
+.card-content p {
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+.card-content .btn-small {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    border: 2px solid #00E5FF;
+    background: #121212;
+    color: #00E5FF;
+    padding: 13px 17px;
+    border-radius: 17px;
+    font-size: 30px;
+    transition: all 500ms ease;
+}
+.card-content button.btn-small:hover {
+    background-color: #00E5FF;
+    color: #121212;
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    header nav ul {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 40px 0;
+        min-height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero--info {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .hero--info h1 { font-size: 32px; }
+    .hero--info h2, .hero--info h3 { font-size: 24px; }
+    .img-left, .img-right {
+        display: none;
+    }
+    .hero-btn {
+        padding: 40px 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .hero-btn .btn1, .hero-btn .btn2 {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .about-me {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+    }
+    .about-me h1 { font-size: 40px; }
+    .about-me p { font-size: 20px; }
+    .projects {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .projects img {
+        width: 100%;
+        height: auto;
+    }
+    .card-content p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .card-content .btn-small {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
